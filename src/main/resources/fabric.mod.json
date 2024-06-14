@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "mmi",
+	"version": "${version}",
+	"name": "Minecraft Mod Informatica",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"XtraDavido",
+		"Comrade John"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mmi/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.xtrajohn.mmi.MinecraftModInformatica"
+		],
+		"client": [
+			"net.xtrajohn.mmi.MinecraftModInformaticaClient"
+		],
+		"fabric-datagen": [
+			"net.xtrajohn.mmi.MinecraftModInformaticaDataGenerator"
+		]
+	},
+	"mixins": [
+		"mmi.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
